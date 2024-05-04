@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 {
+            background-color:salmon;
+            height: 300px;
+            width: 300px;
+            border-width: 10px;
+            border-style: solid;
+
+            padding: 10px;
+            margin: auto;
+
+            outline-width: 5px;
+            outline-style: dotted;
+            outline-color: salmon;
+
+            /*Shorthand para Outline: WIDTH, STYLE, COLOR*/
+        }
+
+        a {
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+            margin: 1em;
+            border-width: 0.1em;
+        }
+
+        p {
+            margin: 20px;
+        }
+
+        #link2 {
+            display: block
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet magnam cupiditate qui adipisci distinctio! Saepe voluptas delectus cum! Temporibus asperiores repudiandae perferendis, sit vero possimus voluptatem dignissimos repellat veritatis rem.</p>
+    <br>
+    <p>Parágrafos com um link em que foi aplicado o display: block <a href="#" id="link2">bla bla bla</a>. Vamos ver como tudo isso funciona. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet magnam cupiditate qui adipisci distinctio! Saepe voluptas delectus cum! Temporibus asperiores repudiandae perferendis, sit vero possimus voluptatem dignissimos repellat veritatis rem.</p>
+</body>
+</html>

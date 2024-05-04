@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family:monospace;
+            background-color: bisque;
+            margin: 0px;
+        }
+        
+        header {
+            background-color: burlywood;
+            padding: 10px;
+            margin: 10px;
+        }
+        
+        nav {
+            background-color: brown;
+            color:aliceblue;
+            padding: 3px;
+            box-shadow: 1px 1px 10px black;
+            
+        }
+
+        nav > a {
+            
+            color:whitesmoke;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        main {
+            background-color: honeydew;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px;
+        }
+
+        article {
+            background-color: aquamarine;
+            padding: 5px 20px;
+            border-radius: 20px;
+        }
+
+        aside {
+            font-weight: bold;
+        }
+
+        footer {
+            background-color:coral;
+            color:white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px 10px;
+        }
+
+        div#bola {
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            border-radius: 50%;
+        }
+        
+    </style>
+</head>
+<body>
+    <!--divs são tags que representam caixas do tipo box-level-->
+    <!--span são tags que representam caixas do tipo inline-level-->
+    <div></div>
+    <span></span>
+    <!--No HTML5 existem as tags que representam caixas SEMÂNTICAS-->
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+            <a href="">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticia sobre HTML5</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error sit non, reiciendis inventore quos consectetur incidunt laboriosam blanditiis fugiat itaque libero praesentium voluptatem suscipit voluptates dicta dolorum tempora nemo possimus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius eaque unde ipsa quas saepe repellat nostrum, exercitationem magnam eos iusto numquam est mollitia odio facere. Accusantium officia est voluptas modi.</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Diego Paladini</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>
