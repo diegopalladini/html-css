@@ -4,12 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        td, th, caption {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+
+            background-color: lightgray;
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            font-weight: bolder;
+            color: white;
+        }
+
+        td.num {
+            text-align: right;
+        }
+    </style>
 </head>
 <body>
-    <h1>Usando tabelas grandes</h1>
+    <h1>Tabelas grandes</h1>
     <!--
         HIERARQUIA DE TABELAS (grandes)
         TABLE = tabela
+            CAPTION = título/legenda da tabela
             THEAD = cabeca da tabela
                 TR, TD, TH
             TBODY = corpo da tabela
@@ -18,20 +52,32 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>São Paulo</td>
-                <td>44 411 238</td>
+                <td><img src="sp.svg.webp" alt="Bandeira do estado de SP"> São Paulo</td>
+                <td class="num">44 411 238</td>
+            </tr>
+            <tr>
+                <td><img src="mg.svg.webp" alt="Bandeira do estado de MG"> Minas Gerais</td>
+                <td class="num">20 538 718</td>
+            </tr>
+            <tr>
+                <td><img src="rj.svg.webp" alt="Bandeira do estado de RJ"> Rio de Janeiro</td>
+                <td class="num">16 054 524</td>
             </tr>
         </tbody>
         <tfoot>
-
+            <tr>
+                <th scope="row">Total de habitantes</th>
+                <td class="num">66.000.000</td>
+            </tr>
         </tfoot>
     </table>
 </body>
