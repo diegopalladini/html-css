@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mais um form</title>
+</head>
+<body>
+    <h1>Formulário que fiz</h1>
+    <fieldset>
+        <form action="cadastr.php" method="get">
+            <p>
+                <label for="">Em que ano você nasceu?</label>
+                <input type="number" name="ano" id="iano" min="1980" max="2010" value="1990" oninput="idade.innerHTML = 2024 - Number(iano.value)"><br>
+                <p>Você tem <output id="idade">0</output> anos</p>
+            </p>
+        
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </fieldset>
+    <h1>Formulário que Guanabara fez</h1>
+    <fieldset>
+        <form action="cadastr.php" method="get">
+            <p>
+                <label for="">Em que ano você nasceu?</label>
+                <input type="number" name="ano" id="iano" min="1980" max="2010" oninput="calcIdade()">
+            </p>
+        
+            <p>
+                <label for="iidade">Sua idade é: </label>
+                <output id="iidade">0</output>
+            </p>
+
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+            <script>
+                function calcIdade() {
+                    let atual = new Date().getFullYear()
+                    iidade.innerHTML = Number(atual) - Number(iano.value)
+                }
+            </script>
+        </form>
+    </fieldset>
+    
+</body>
+</html>
