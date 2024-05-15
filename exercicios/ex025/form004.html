@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        fieldset {
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="get">
+        <fieldset> <!-- borda para agrupar o form ou áreas do form, como "dados pessoais"; "dados profissionais" etc-->
+            <legend>Dados Pessoais</legend> <!-- legenda integrada à borda do form -->
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome">
+            </p>
+            <p>
+                <label for="iemail">Email</label>
+                <input type="email" name="email" id="iemail">
+            </p>
+            <p>
+                <label for="itel">Tel</label>
+                <input type="tel" name="tel" id="itel" pattern="^\(d{2}\)\d{4,5}-\d{4}$" placeholder="(XX)XXXXX-XXXX">
+            </p>
+        </fieldset>
+        <!--Estudar mais sobre RegEx (Regular Expressions / Expressões Regulares) - HTML5 telephone pattern
+        
+        ^: início do pattern de telefone
+        $: fim do pattern de telefone
+        \(: abertura de parênteses
+        d{2}: 2 dígitos para DDD
+        \): fechamento de parênteses
+        \d{4,5}: 4 ou 5 dígitos iniciais do telefone
+        -: hífen separando dígitos do telefone
+        \d{4}: 4 dígitos finais do telefone -->
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
