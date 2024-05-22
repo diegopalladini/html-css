@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+
+    header {
+        flex-flow: column;
+
+    }
+    
+    header h1 {
+        flex-basis: 50px;
+    }
+    
+    header menu {
+        flex-flow: column;
+
+    }
+
+    menu a {
+        width: 90vw;
+    }
+
+    main {
+        width: 80vw;
+
+    }
